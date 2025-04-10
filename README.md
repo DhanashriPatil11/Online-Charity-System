@@ -1,69 +1,109 @@
-# Online Charity System
-It sounds like you're working on the Online Charity System project, which aims to support charitable donations and manage related activities online. Based on your previous input, this system includes front-end technologies like HTML, CSS, and JavaScript, with a back-end built on Java Servlets, and MySQL for database management.
+# 🌐 Online Charity System
 
-## Project Overview
+The **Online Charity System** is a platform designed to support charitable donations and manage related activities online. It provides a user-friendly interface for both donors and charity organizations, facilitating transparent and efficient donation processes.
 
-The **Online Charity System** is a platform that allows users to donate to various charitable causes, track donations, and manage charity campaigns. The system provides a user-friendly interface for both donors and charities, facilitating transparent and efficient donation processes.
+---
 
-### Key Features:
-- **Donor Registration & Login**: Users can register, log in, and view available charity campaigns.
-- **Charity Campaign Management**: Charities can create, update, and manage their campaigns.
-- **Donation Tracking**: Donors can view donation history and track progress of their contributions.
-- **Admin Panel**: Admins can manage users, campaigns, and monitor donation activities.
+## 📝 Project Overview
 
-## Technologies Used
-- **Front-end**: HTML, CSS, JavaScript
-- **Back-end**: Java Servlets
-- **Database**: MySQL
-- **Server**: XAMPP
+This system enables users to:
 
-## System Architecture
-The system follows a client-server architecture where:
-1. The **front-end** is responsible for displaying the user interface and interacting with the back-end through RESTful APIs.
-2. The **back-end** handles business logic, database operations, and user authentication.
-3. The **database** stores user information, donation history, charity campaigns, and other relevant data.
+- Donate to various charitable causes  
+- Track their donations  
+- Manage and organize charity campaigns  
 
-## Setup Instructions
+It includes key modules for donors, charities, and admins, built using Java Servlets for the backend and MySQL for data management.
 
-### 1. Clone the repository:
+---
+
+## ✨ Key Features
+
+- ✅ **Donor Registration & Login**  
+  Users can register, log in, and browse active charity campaigns.
+
+- 🎯 **Charity Campaign Management**  
+  Charities can create, update, and manage donation campaigns.
+
+- 💸 **Donation Tracking**  
+  Donors can track their donation history and contribution progress.
+
+- 🛠️ **Admin Panel**  
+  Admins can manage users, campaigns, and oversee system activity.
+
+---
+
+## 🛠️ Technologies Used
+
+| Layer       | Technology           |
+|-------------|----------------------|
+| Front-end   | HTML, CSS, JavaScript |
+| Back-end    | Java Servlets        |
+| Database    | MySQL                |
+| Server      | XAMPP (Apache + MySQL) |
+
+---
+
+## 🏗️ System Architecture
+
+The system follows a **client-server architecture**:
+
+1. **Front-end**: Displays UI and interacts with the back-end via RESTful APIs.  
+2. **Back-end**: Handles business logic, data operations, and user management.  
+3. **Database**: Stores users, donations, campaigns, and transaction history.
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/DhanashriPatil11/online-charity-system.git
+```
 
-**2. Install XAMPP**
-Download and install XAMPP from here. Once installed, start the Apache and MySQL servers.
+### 2️⃣ Install XAMPP
+- Download and install XAMPP: [https://www.apachefriends.org](https://www.apachefriends.org)
+- Start the **Apache** and **MySQL** services.
 
-**3. Set up the database:**
-Open phpMyAdmin (http://localhost/phpmyadmin) and create a new database.
+### 3️⃣ Set Up the Database
+- Open **phpMyAdmin** (`http://localhost/phpmyadmin`)
+- Create a new database (e.g., `charity_db`)
+- Import the schema:
+  ```
+  database/schema.sql
+  ```
 
-Import the database schema from database/schema.sql into the newly created database.
+### 4️⃣ Set Up the Project in Your IDE
+- Open the project in **Eclipse**, **IntelliJ IDEA**, or your preferred IDE.
+- Configure the **MySQL connection** in the `web.xml` file.
 
-**4. Set up the project in your IDE:**
-Open the project in your favorite IDE (e.g., Eclipse or IntelliJ IDEA).
+### 5️⃣ Run the Project
+- Deploy the project to your XAMPP `htdocs` or using a servlet container.
+- Open your browser and navigate to:
+  ```
+  http://localhost/your-app-name
+  ```
 
-Configure the MySQL connection in the web.xml file for the project to connect to the database.
+---
 
-**5. Run the project:**
-After configuring the database and back-end, deploy the project to the XAMPP server and run it.
+## 🤝 Contributing
 
-Open your browser and navigate to http://localhost/your-app-name to access the system.
+We welcome contributions!  
+Feel free to fork the repository and submit a pull request with your improvements.
 
-**Contributing**
-Contributions are welcome! If you'd like to contribute, feel free to fork the repository and submit a pull request with your improvements.
+### 🔧 How to Contribute
+1. Fork the repository  
+2. Create a new branch for your feature or bug fix  
+3. Commit your changes  
+4. Submit a pull request with a clear description
 
-**How to contribute:**
-1. Fork the repository
+---
 
-2. Create a new branch for your feature or bug fix
+## 📬 Contact
 
-3. Commit your changes
+For any questions or feedback:
 
-4. Submit a pull request with a description of the changes
+- **📧 Email**: [patil.dhanashrik@gmail.com](mailto:patil.dhanashrik@gmail.com)  
+- **🐙 GitHub**: [DhanashriPatil11](https://github.com/DhanashriPatil11)  
+- **🔗 LinkedIn**: [Dhanashri Patil](https://www.linkedin.com/in/dhanashri-patil24/)
 
-**Contact**
-For any questions or feedback, feel free to reach out to:
-
-**Email:** patil.dhanashrik@gmail.com
-
-**GitHub: ** https://github.com/DhanashriPatil11
-
-**LinkedIn: ** https://www.linkedin.com/in/dhanashri-patil24/
+---
