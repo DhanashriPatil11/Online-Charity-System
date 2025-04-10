@@ -47,10 +47,10 @@ After configuring the database and back-end, deploy the project to the XAMPP ser
 
 Open your browser and navigate to http://localhost/your-app-name to access the system.
 
-### Contributing
+**Contributing**
 Contributions are welcome! If you'd like to contribute, feel free to fork the repository and submit a pull request with your improvements.
 
-### How to contribute:
+**How to contribute:**
 1. Fork the repository
 
 2. Create a new branch for your feature or bug fix
@@ -58,13 +58,12 @@ Contributions are welcome! If you'd like to contribute, feel free to fork the re
 3. Commit your changes
 
 4. Submit a pull request with a description of the changes
-----
 
-Contact
+**Contact**
 For any questions or feedback, feel free to reach out to:
 
-Email: patil.dhanashrik@gmail.com
+**Email:** patil.dhanashrik@gmail.com
 
-GitHub: https://github.com/DhanashriPatil11
+**GitHub: ** https://github.com/DhanashriPatil11
 
-LinkedIn: https://www.linkedin.com/in/dhanashri-patil24/
+**LinkedIn: ** https://www.linkedin.com/in/dhanashri-patil24/
