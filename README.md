@@ -58,7 +58,7 @@ Contributions are welcome! If you'd like to contribute, feel free to fork the re
 3. Commit your changes
 
 4. Submit a pull request with a description of the changes
-
+----
 
 Contact
 For any questions or feedback, feel free to reach out to:
