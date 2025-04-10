@@ -29,20 +29,20 @@ The system follows a client-server architecture where:
 ```bash
 git clone https://github.com/DhanashriPatil11/online-charity-system.git
 
-### 2. Install XAMPP
+**2. Install XAMPP**
 Download and install XAMPP from here. Once installed, start the Apache and MySQL servers.
 
-### 3. Set up the database:
+**3. Set up the database:**
 Open phpMyAdmin (http://localhost/phpmyadmin) and create a new database.
 
 Import the database schema from database/schema.sql into the newly created database.
 
-#### 4. Set up the project in your IDE:
+**4. Set up the project in your IDE:**
 Open the project in your favorite IDE (e.g., Eclipse or IntelliJ IDEA).
 
 Configure the MySQL connection in the web.xml file for the project to connect to the database.
 
-### 5. Run the project:
+**5. Run the project:**
 After configuring the database and back-end, deploy the project to the XAMPP server and run it.
 
 Open your browser and navigate to http://localhost/your-app-name to access the system.
