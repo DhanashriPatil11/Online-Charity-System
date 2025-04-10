@@ -88,18 +88,6 @@ git clone https://github.com/DhanashriPatil11/online-charity-system.git
 ---
 
 
-## Images
-
-![Main Page](D:\ecllipse setup\Online charity system images\Screenshot (574).png)
-
-
-![System Architecture](path_to_your_image/architecture-diagram.png)
-
-
-![System Architecture](path_to_your_image/architecture-diagram.png)
-
-
-![System Architecture](path_to_your_image/architecture-diagram.png)
 
 
 
