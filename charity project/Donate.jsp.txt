@@ -1,0 +1,121 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%@page import="java.sql.*" %>
+<%@page import="charityPackage.DbConnection" %>
+<%@page import="charityPackage.SetGet" %>
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Donate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Add any custom styles here */
+  </style>
+</head>
+<body class="img js-fullheight" style="background-image: url(images/bg3.jpg);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+        <h2 class="heading-section">Donate to Project</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <% 
+          // Retrieve donor ID from session or request
+          int donorId = SetGet.getNgoId(); // Make sure this method is correctly implemented
+          String projectId = request.getParameter("projectId");
+          int donationAmount = Integer.parseInt(request.getParameter("amount"));
+          System.out.println("Donor Id = "+donorId);
+          System.out.println("Amount "+donationAmount);
+          
+          System.out.println("projectName= "+projectId);
+          Connection conn = null;
+          PreparedStatement psProject = null;
+          PreparedStatement psDonor = null;
+          ResultSet rsProject = null;
+          ResultSet rsDonor = null;
+
+          try {
+            conn = DbConnection.connect();
+            conn.setAutoCommit(false); // Start transaction
+
+            // Retrieve project information
+            String selectProjectSQL = "SELECT projectcost, donationreceived FROM project WHERE id = ?";
+            psProject = conn.prepareStatement(selectProjectSQL);
+            psProject.setString(1, projectId);
+            rsProject = psProject.executeQuery();
+
+            if (rsProject.next()) {
+              int projectCost = rsProject.getInt("projectCost");
+              int donationreceived = rsProject.getInt("donationreceived");
+
+              // Check if donation amount exceeds the remaining project cost
+              if (donationAmount > (projectCost - donationreceived)) {
+                out.println("<div class='alert alert-danger'>Donation amount exceeds the remaining project cost. Please adjust your donation.</div>");
+              } else {
+                // Update project table with new donation received
+                String updateProjectSQL = "UPDATE project SET donationreceived = donationreceived + ? WHERE id = ?";
+                psProject = conn.prepareStatement(updateProjectSQL);
+                psProject.setInt(1, donationAmount);
+                psProject.setString(2, projectId);
+                psProject.executeUpdate();
+
+                // Check if donor has already donated
+                String selectDonorSQL = "SELECT * FROM donor WHERE id = ?";
+                psDonor = conn.prepareStatement(selectDonorSQL);
+                psDonor.setInt(1, donorId);
+                rsDonor = psDonor.executeQuery();
+
+                if (rsDonor.next()) {
+                  // Donor already exists, update existing record
+                  int existingDonation = rsDonor.getInt("donation");
+                  int updatedDonation = existingDonation + donationAmount;
+
+                  String updateDonorSQL = "UPDATE donor SET donation = ? WHERE id = ?";
+                  psDonor = conn.prepareStatement(updateDonorSQL);
+                  psDonor.setInt(1, updatedDonation);
+                  psDonor.setInt(2, donorId);
+                  psDonor.executeUpdate();
+                } else {
+                }
+
+                conn.commit(); // Commit transaction
+                out.println("<div class='alert alert-success'>Thank you for your donation!</div>");
+              }
+            } else {
+              out.println("<div class='alert alert-danger'>Project not found. Please check the project name.</div>");
+            }
+          } catch (SQLException e) {
+            if (conn != null) {
+              try {
+                conn.rollback(); // Rollback transaction if there's an error
+              } catch (SQLException ex) {
+                ex.printStackTrace();
+              }
+            }
+            e.printStackTrace();
+            out.println("<div class='alert alert-danger'>Donation failed. Please try again later.</div>");
+          } finally {
+            // Close resources
+            if (rsProject != null) try { rsProject.close(); } catch (SQLException e) { e.printStackTrace(); }
+            if (rsDonor != null) try { rsDonor.close(); } catch (SQLException e) { e.printStackTrace(); }
+            if (psProject != null) try { psProject.close(); } catch (SQLException e) { e.printStackTrace(); }
+            if (psDonor != null) try { psDonor.close(); } catch (SQLException e) { e.printStackTrace(); }
+            if (conn != null) try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
+          }
+        %>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

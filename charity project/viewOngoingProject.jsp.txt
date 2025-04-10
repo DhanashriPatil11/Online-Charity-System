@@ -1,0 +1,69 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+   <%@page import="java.sql.*" %>
+<%@page import="charityPackage.DbConnection" %>
+<%@page import="charityPackage.SetGet" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>donor view ongoing project and donate </title>
+</head>
+<body>
+<center>
+<table border="1">
+<tr>
+<th>NGO id</th>
+<th>projectName</th>
+<th>projectDetails</th>
+<th>city</th>
+<th>projectCost</th>
+<th>DonationReceived</th>
+<th>status</th>
+<th>donate</th>
+</tr>
+<%
+Connection con=null;
+Statement stmt=null;
+ResultSet rs = null;
+try{
+	 con=DbConnection.connect();
+	  stmt=con.createStatement();
+	  String sql="select * from project where status='ongoing'";
+	  rs=stmt.executeQuery(sql);
+	  while(rs.next()) {
+		  %>
+			 <TR>
+		 <TD> <%= rs.getInt("ngoId") %> </TD>
+		  <TD> <%= rs.getString("projectName") %> </TD>
+		   <TD> <%= rs.getString("projectDetails") %> </TD>
+		    <TD> <%= rs.getString("city") %> </TD>
+		     <TD> <%= rs.getString("projectCost") %> </TD>
+		     <TD> <%= rs.getInt("DonationReceived") %> </TD>
+		     <TD> <%= rs.getString("status") %> </TD>
+		     <td>
+		     <form action="AddAmount.jsp" method="post">
+		      <input type="hidden" name="projectName" value="<%= rs.getString("projectName") %>">
+		       <input type="number" name="donationAmount" placeholder="Amount" required>
+		       <button type="submit">donate</button>
+		       </td>
+		     </form>
+		     </TR>
+		     	    <% }
+}
+        catch (Exception e) {
+			
+			e.printStackTrace();
+		} finally{
+			if (rs !=null) try{rs.close();}catch (Exception e) {e.printStackTrace(); }
+			if (stmt !=null) try{stmt.close();}catch (Exception e) {e.printStackTrace(); }
+			if (con !=null) try{con.close();}catch (Exception e) {e.printStackTrace(); }
+		}
+		     
+	  
+
+%>
+</table>
+</center>
+</body>
+</html>
