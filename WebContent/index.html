@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Online Charity System">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="charity, NGO, donor, dashboard, responsive">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+    <title>Online Charity System</title>
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(120deg, #00b09b, #96c93d);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .sidebar {
+            background: #212529;
+            color: #fff;
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+            overflow-y: auto;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background: #343a40;
+        }
+
+        .sidebar .icon {
+            margin-right: 10px;
+        }
+
+.main {
+    margin-left: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a2c2e5, #c9daf8, #e0f7fa); /* Lightest blues */
+    animation: gradientAnimation 15s ease infinite; /* Dynamic color transition effect */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #a2c2e5, #c9daf8, #e0f7fa); /* Soft light blue gradient */
+    }
+    25% {
+        background: linear-gradient(135deg, #e0f7fa, #a2c2e5, #c9daf8); /* Subtle shift in color order */
+    }
+    50% {
+        background: linear-gradient(135deg, #c9daf8, #e0f7fa, #a2c2e5); /* Continue dynamic color transition */
+    }
+    75% {
+        background: linear-gradient(135deg, #a2c2e5, #e0f7fa, #c9daf8); /* Maintain fluid color mixing */
+    }
+    100% {
+        background: linear-gradient(135deg, #c9daf8, #a2c2e5, #e0f7fa); /* Return to starting point */
+    }
+}      .animated-paragraph {
+    background: #f0f8ff; /* Light blue background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .animated-paragraph::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 6s infinite;
+            z-index: 0;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.5); opacity: 0.3; }
+            50% { transform: scale(1.5); opacity: 0.1; }
+            100% { transform: scale(0.5); opacity: 0.3; }
+        }
+
+        .animated-paragraph h2, .animated-paragraph p {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html"><i class="icon fas fa-home"></i> Home</a>
+        <a href="ngoRegistration.html"><i class="icon fas fa-building"></i> NGO Registration Page</a>
+        <a href="loginNgo.html"><i class="icon fas fa-building"></i> NGO Login Page</a>
+        <a href="AddProject.html"><i class="icon fas fa-plus-circle"></i> Add Project</a>
+        <a href="ChangeProjectStatusNGOhtml.html"><i class="icon fas fa-edit"></i> Change Project Status NGO</a>
+        <a href="ChangePassword.html"><i class="icon fas fa-key"></i> Change Password</a>
+         <a href="NgoLogout.html"><i class="icon fas fa-users"></i> NGO logout</a>
+        <a href="DonarRegistration.html"><i class="icon fas fa-user"></i> Donor Registration Page</a>
+        <a href="donorLogin.html"><i class="icon fas fa-user"></i> Donor Login Page</a>
+        <a href="donorDonation.html"><i class="icon fas fa-donate"></i> Donate Now</a>
+
+        <a href="ViewDonardonation.html"><i class="icon fas fa-archive"></i> View Donor's Donation</a>
+        <a href="OngoingProjectsDonor.html"><i class="icon fas fa-building"></i> Donor's Project</a>
+        <a href="donarChangePassword.html"><i class="icon fas fa-building"></i> Donor's Change Password</a>
+        
+        <a href="donorlogout.html"><i class="icon fas fa-users"></i> Donor logout</a>
+    </div>
+
+    <div class="main">
+        <div class="animated-paragraph">
+            <h2>About Charity</h2>
+            <p>
+                Charity is not just about giving money; it's about giving hope, providing opportunities, and supporting those in need. Through charitable actions, we uplift communities, promote social justice, and foster a culture of kindness and empathy.
+            </p>
+            <p>
+                By contributing to charity, we help build a more compassionate and equitable society. It is through collective efforts and shared responsibility that we can address global challenges and create lasting change. Every act of giving, no matter how small, contributes to a larger movement towards a better future for all.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

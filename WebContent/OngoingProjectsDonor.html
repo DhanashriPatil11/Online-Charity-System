@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Projects of Donor | Online Charity System</title>
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 align="center"><b>Ongoing Projects of Donor </b></h1>
+    </header>
+    <br>
+
+    <main>
+        <!-- Form for inserting new projects -->
+        <section>
+            <h2><b>Insert New Project</b></h2>
+            <form action="OngoingProjectsDonor" method="post">
+                <input type="hidden" name="action" value="insert">
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName" required>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                <label for="status">Status:</label>
+                <input type="text" id="status" name="status" required>
+                <button type="submit">Insert Project</button>
+            </form>
+        </section>
+<br>
+<br>
+        <!-- Form for updating existing projects -->
+        <section>
+            <h2><b>Update Existing Project</b></h2>
+            <form action="OngoingProjectsDonor" method="post">
+                <input type="hidden" name="action" value="update">
+                <label for="updateProjectId">Project ID:</label>
+                <input type="text" id="updateProjectId" name="projectId" required>
+                <label for="updateProjectName">Project Name:</label>
+                <input type="text" id="updateProjectName" name="projectName" required>
+                <label for="updateDescription">Description:</label>
+                <input type="text" id="updateDescription" name="description" required>
+                <label for="updateStatus">Status:</label>
+                <input type="text" id="updateStatus" name="status" required>
+                <button type="submit">Update Project</button>
+            </form>
+        </section>
+
+        <!-- Table for displaying ongoing projects -->
+        <section>
+            <h2></h2>
+            <div id="projectsTable">
+                <!-- The table will be populated by the servlet -->
+            </div>
+        </section>
+    </main>
+<br>
+<br>
+
+    <footer>
+        <p>&copy; 2024 Online Charity System</p>
+    </footer>
+</body>
+
+</html>

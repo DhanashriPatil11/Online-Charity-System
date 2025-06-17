@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Test Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form action="test" method="post">
+        <h2>Test Form</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        <label for="prn">PRN</label>
+        <input type="text" id="prn" name="prn" placeholder="Enter PRN" required>
+        <label for="rollno">Roll No</label>
+        <input type="text" id="rollno" name="rollno" placeholder="Enter Roll No" required>
+        <label for="marks">Marks</label>
+        <input type="text" id="marks" name="marks" placeholder="Enter Marks" required>
+     <button type="submit" style="display: block; margin: 10 auto;">Submit</button>
+    </form>
+</body>
+</html>

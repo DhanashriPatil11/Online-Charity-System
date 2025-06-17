@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Overview | Online Charity System</title>
+    <style>
+        /* Adding background gradient with additional color */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff6b6b, #f7c4b1, #f0e68c, #98d1d7, #e3a7f0);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            height: 100vh;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header, main, footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        main {
+            background: rgba(255, 255, 255, 0.8); /* Slight opacity to simulate glass effect */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            font-weight: bold;
+        }
+
+        form, table {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 align="center" style="font-weight: bold; font-size: 36px;">Projects Overview</h1>
+    </header>
+
+    <main>
+        <!-- Form for inserting new projects -->
+        <section>
+            <br><br>
+            <h2 align="center" style="font-weight: bold; font-size:30px;">Update Project Status</h2>
+            <form action="ChangeProjectStatusNGOhtml" method="post">
+                <label for="insertProjectName" style="font-size: 18px; display: block; margin-bottom: 8px;">Project Name:</label>
+                <input type="text" id="insertProjectName" name="insertProjectName" required style="width: 100%; padding: 8px; margin-bottom: 16px;">
+
+                <label for="insertDescription" style="font-size: 18px; display: block; margin-bottom: 8px;">Description:</label>
+                <textarea id="insertDescription" name="insertDescription" required style="width: 100%; padding: 8px; margin-bottom: 16px;"></textarea>
+
+                <!-- Centering the button -->
+                <div style="text-align: center;">
+                    <button type="submit">Update Project</button>
+                </div>
+            </form>
+            <br><br>
+        </section>
+
+     
+</body>
+
+</html>
