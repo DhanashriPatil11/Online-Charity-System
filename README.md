@@ -46,7 +46,7 @@ It includes key modules for donors, charities, and admins, built using Java Serv
 ---
 ## Images
 
-![Main Page](Images/Screenshot (574).png)
+![Alt text](Images/Screenshot (574).png)
 ![Home Page](Images/Screenshot (558).png)
 ![NGO Login](Images/Screenshot (576).png)
 ![NGO Registration](Images/Screenshot (575).png)
