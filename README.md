@@ -49,7 +49,7 @@ It includes key modules for donors, charities, and admins, built using Java Serv
 
 The system follows a **client-server architecture**:
 
-1. **Front-end**: Displays UI and interacts with the back-end via RESTful APIs.  
+1. **Front-end**: Displays UI and interacts with the User.  
 2. **Back-end**: Handles business logic, data operations, and user management.  
 3. **Database**: Stores users, donations, campaigns, and transaction history.
 
