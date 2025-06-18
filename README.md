@@ -49,14 +49,23 @@ It includes key modules for donors, charities, and admins, built using Java Serv
 ---
 ## Images
 
-![Alt text](Images/Screenshot (574).png)
-![Home Page](Images/Screenshot (558).png)
-![NGO Login](Images/Screenshot (576).png)
-![NGO Registration](Images/Screenshot (575).png)
-![NGO- Add Projects](Images/Screenshot (578).png)
-![Project Registration](Images/Screenshot (583).png)
-![Listing Donor's Donation](Images/Screenshot (586).png)
-![Change Password](Images/Screenshot (587).png)
+<p align="center">
+  <img src="Images/Screenshot%20%28574%29.png" alt="Home Page" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28558%29.png" alt="Dashboard View" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28576%29.png" alt="NGO Login Page" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28575%29.png" alt="NGO Registration Page" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28578%29.png" alt="NGO Add Projects Page" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28583%29.png" alt="Project Registration Form" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28586%29.png" alt="Donor Donation Listing" width="600"/>
+  <br/>
+  <img src="Images/Screenshot%20%28587%29.png" alt="Change Password Page" width="600"/>
+</p>
 
 ---
 
