@@ -44,6 +44,18 @@ It includes key modules for donors, charities, and admins, built using Java Serv
 | Server      | XAMPP (Apache + MySQL) |
 
 ---
+## Images
+
+![Main Page](Images/Screenshot (574).png)
+![Home Page](Images/Screenshot (558).png)
+![NGO Login](Images/Screenshot (576).png)
+![NGO Registration](Images/Screenshot (575).png)
+![NGO- Add Projects](Images/Screenshot (578).png)
+![Project Registration](Images/Screenshot (583).png)
+![Listing Donor's Donation](Images/Screenshot (586).png)
+![Change Password](Images/Screenshot (587).png)
+
+---
 
 ## 🏗️ System Architecture
 
