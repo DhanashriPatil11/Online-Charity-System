@@ -49,23 +49,41 @@ It includes key modules for donors, charities, and admins, built using Java Serv
 ---
 ## Images
 
+## Images
+
 <p align="center">
-  <img src="Images/Screenshot%20%28574%29.png" alt="Home Page" width="600"/>
-  <br/>
-  <img src="Images/Screenshot%20%28558%29.png" alt="Dashboard View" width="600"/>
-  <br/>
+  <strong>Dashboard View</strong><br/>
+  <img src="Images/Screenshot%20%28574%29.png" alt="Dashboard View" width="600"/>
+  <br/><br/>
+
+  <strong>Home Page</strong><br/>
+  <img src="Images/Screenshot%20%28558%29.png" alt="Home Page" width="600"/>
+  <br/><br/>
+
+  <strong>NGO Login Page</strong><br/>
   <img src="Images/Screenshot%20%28576%29.png" alt="NGO Login Page" width="600"/>
-  <br/>
+  <br/><br/>
+
+  <strong>NGO Registration Page</strong><br/>
   <img src="Images/Screenshot%20%28575%29.png" alt="NGO Registration Page" width="600"/>
-  <br/>
+  <br/><br/>
+
+  <strong>NGO Add Projects Page</strong><br/>
   <img src="Images/Screenshot%20%28578%29.png" alt="NGO Add Projects Page" width="600"/>
-  <br/>
+  <br/><br/>
+
+  <strong>Project Registration Form</strong><br/>
   <img src="Images/Screenshot%20%28583%29.png" alt="Project Registration Form" width="600"/>
-  <br/>
+  <br/><br/>
+
+  <strong>Donor Donation Listing</strong><br/>
   <img src="Images/Screenshot%20%28586%29.png" alt="Donor Donation Listing" width="600"/>
-  <br/>
+  <br/><br/>
+
+  <strong>Change Password Page</strong><br/>
   <img src="Images/Screenshot%20%28587%29.png" alt="Change Password Page" width="600"/>
 </p>
+
 
 ---
 
