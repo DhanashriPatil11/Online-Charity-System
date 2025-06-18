@@ -51,12 +51,12 @@ It includes key modules for donors, charities, and admins, built using Java Serv
 
 ## Images
 
-<p align="center">
-  <strong>Dashboard View</strong><br/>
+<p>
+  <strong>Home Page</strong><br/>
   <img src="Images/Screenshot%20%28574%29.png" alt="Dashboard View" width="600"/>
   <br/><br/>
 
-  <strong>Home Page</strong><br/>
+  <strong>Dashboard View</strong><br/>
   <img src="Images/Screenshot%20%28558%29.png" alt="Home Page" width="600"/>
   <br/><br/>
 
