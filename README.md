@@ -2,7 +2,7 @@
 
 The **Online Charity System** is a platform designed to support charitable donations and manage related activities online. It provides a user-friendly interface for both donors and charity organizations, facilitating transparent and efficient donation processes.
 
-![Online Charity System](https://media.licdn.com/dms/image/v2/D4D12AQHrbw4fziFMWg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1693320741429?e=1749686400&v=beta&t=HQU0BMJt8XoWE70xUmhTPW1dO97jslbTG5AiaiCapnw)
+![Online Charity System](https://media.licdn.com/dms/image/v2/D5612AQGVmlA3yXZjmQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1693454997012?e=2147483647&v=beta&t=izdBLaBRxrnlbxtFYiGBQ-NQ997aMMTy_08mocy2G8k)
 
 ---
 
